@@ -1,0 +1,170 @@
+<!-- Personal Portfolio Website | File: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zishan zaffar - Personal Portfolio</title>
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content">Skip to main content</a>
+  <hr>
+  <marquee><h2>Welcome to My Portfolio!</h2></marquee>
+  
+  <!-- Header & Navigation -->
+  <header>
+    <h1>Zishan zaffar</h1>
+    <!-- Video tag optimized with playsinline for better browser support -->
+    <video src="video.mp4" muted loop autoplay playsinline height="400" width="700">intro video</video>
+    <hr>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Contact form">Contact form</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main id="main-content">
+    <!-- About Section -->
+    <section id="about">
+      <h2>Welcome to My Portfolio!</h2>
+      <p>Hello! I am a B.tech CSE core 'web development' student. This is my personal portfolio website.</p>
+      <p>I am a web development student focusing on foundational internet technologies. I emphasize writing valid, semantic HTML that ensures documents are readily accessible to screen readers, search engine crawlers, and text-based browsers.</p>
+      <p>My goal is to master core web standards before applying visual layers and interactive scripts, creating websites that are structurally resilient, fast-loading, and easy to maintain.</p>
+      <ul><li><h3>About Me</h3></li></ul>
+      <img src="Image.JPG" alt="portrait of Zishan zaffar " width="150" height="150">
+      <p>I am passionate about learning web development and building creative projects.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <ul>
+        <li>
+          <strong>Portfolio Website:</strong> A personal one-page website to showcase my bio, skills, and contact details.
+        </li>
+        <li>
+          <strong>Medium Clone:</strong> A simple blog layout that looks like Medium, built with clean HTML structure.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <table border="1">
+        <thead>
+          <caption>web devlopment skill</caption>
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Learning</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <br>
+    <b id="Contact form"><pre><h1>Contact form</h1></pre></b>
+    <hr>
+    <hr>
+    
+    <!-- form & input function -->
+    <form action="/action.php">
+      <ul><li><h2><i>Enter name and password</i></h2></li></ul>
+      Name:<input type="text" name="name" placeholder="enter your name" required pattern="[A-Za-z]+">
+      <br>
+      Password:<input type="password" name="password" placeholder="enter password" required minlength="6" maxlength="10">
+      
+      <!-- Label & Radio function -->
+      <ul><li><h2><i>Enter your gender</i></h2></li></ul>
+      <label for="gender-male">
+        <input type="radio" value="male" name="gender" id="gender-male">male
+      </label>
+      <label for="gender-female">
+        <input type="radio" value="female" name="gender" id="gender-female">female
+      </label>
+      <label for="gender-other">
+        <input type="radio" value="other" name="gender" id="gender-other">other
+      </label>
+      <br>
+      
+      <!-- data type="date" -->
+      <ul><li><h2><i>Enter date of birth</i></h2></li></ul>
+      DOB:<input type="date" name="DOB" placeholder="enter your DOB" required min="2000-01-01" max="2026-09-18">
+      <br>
+      
+      <!-- data type="tel" -->
+      <ul><li><h2><i>Enter contact number</i></h2></li></ul>       
+      <label for="contect">
+        Contact:<input type="tel" name="contact" id="contect" placeholder="enter your contact number" required pattern="[6-9]{1}[0-9]{9}" maxlength="10">
+      </label>
+      <br>
+      
+      <!-- data type="email" -->
+      <ul><li><h2><i>Enter your email</i></h2></li></ul>
+      <label for="mail">
+        <input type="email" name="email" id="mail" placeholder="enter your email" required>
+      </label>
+      <br>
+      
+      <!-- select tag  -->
+      <ul><li><h2><i>select your country</i></h2></li></ul>
+      <select name="country" id="country">
+        <option value="india">india</option>
+        <option value="usa">usa</option>
+        <option value="uk">uk</option>
+        <option value="australia">australia</option>
+      </select>
+      <br>
+      
+      <!-- input type="file" -->
+      <ul><li><h2><i>Upload your file</i></h2></li></ul>
+      <label for="file">
+        <input type="file" name="file" id="file" required>
+      </label>
+      <br>
+      
+      <!-- textarea tag -->
+      <ul><li><h2><i>enter feedback</i></h2></li></ul>
+      <textarea name="feedback" id="feedback" placeholder="enter your feedback in experience of our website " cols="20" rows="8"></textarea>
+      <br>
+      
+      <!-- checkbox tag -->
+      <label>
+        <input type="checkbox" name="terms" required> I accept the terms and conditions*
+      </label>
+      <br>
+      
+      <!-- button tag -->
+      <button type="submit">submit</button>
+      <button type="reset">reset</button> 
+    </form>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>credit to Zishan zaffar</p>
+  </footer>
+
+</body>
+</html>
